@@ -69,9 +69,9 @@ extra:
       link: https://twitter.com/{{cookiecutter.twitter_username}}
       name: Twitter
 {%- endif %}
-{% if cookiecutter.github_username != "" %}
+{% if cookiecutter.author_github_handle != "" %}
     - icon: fontawesome/brands/github
-      link: https://github.com/{{cookiecutter.github_username}}
+      link: https://github.com/{{cookiecutter.author_github_handle}}
       name: Github
 {%- endif %}
 {% if cookiecutter.email != "" %}
