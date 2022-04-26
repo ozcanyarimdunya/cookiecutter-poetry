@@ -1,16 +1,16 @@
 on:
   release:
     types: [published]
-    branches: [main]
+    branches: [master]
 
-name: release-main
+name: release-master
 
 jobs:
 
   quality:
     runs-on: ubuntu-latest
     steps:
-    
+
       - name: Check out
         uses: actions/checkout@v2
 
@@ -26,7 +26,7 @@ jobs:
         run: |
           source .venv/bin/activate
           make docs-test
-      {%- endif %} 
+      {%- endif %}
 
   {%- if cookiecutter.tox== "y" %}
 
@@ -42,10 +42,10 @@ jobs:
 
       - name: Set up the environment
         uses: ./.github/workflows/setup-poetry-env
-        with: 
+        with:
           python-version: {% raw %}${{ matrix.python-version }}{% endraw %}
 
-      - name: Test with tox 
+      - name: Test with tox
         run: |
           source .venv/bin/activate
           poetry add tox-gh-actions
@@ -72,13 +72,13 @@ jobs:
         - name: Set output
           id: vars
           run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-        
+
         - name: Build and publish
           run: |
             source .venv/bin/activate
             poetry version $RELEASE_VERSION
             make build-and-publish
-          env: 
+          env:
             {% if cookiecutter.publish_to == "pypi" -%}
             {%- raw -%}
             PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
@@ -112,7 +112,7 @@ jobs:
 
       - name: Set up the environment
         uses: ./.github/workflows/setup-poetry-env
-        
+
       - name: Generate documentation
         run: |
             source .venv/bin/activate

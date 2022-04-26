@@ -1,8 +1,9 @@
-# {{cookiecutter.project_name}}
-
-[![Release](https://img.shields.io/github/v/release/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})](https://img.shields.io/github/v/release/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
-[![Build status](https://img.shields.io/github/workflow/status/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/merge-to-main)](https://img.shields.io/github/workflow/status/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/merge-to-main)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})](https://img.shields.io/github/commit-activity/m/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
-[![License](https://img.shields.io/github/license/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})](https://img.shields.io/github/license/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
+# Getting started
 
 {{cookiecutter.project_description}}
+
+| Project       | {{cookiecutter.project_name}}                                                     |
+|---------------|-----------------------------------------------------------------------------------|
+| Author        | {{cookiecutter.author}}                                                           |
+| Documentation | https://{{cookiecutter.github_username}}.github.io/{{cookiecutter.project_name}}/ |
+| Source code   | https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}} |

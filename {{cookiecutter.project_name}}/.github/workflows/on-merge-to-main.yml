@@ -1,11 +1,11 @@
 on:
     push:
         branches:
-            - main
+            - master
         tags-ignore:
             - '**'
 
-name: merge-to-main
+name: merge-to-master
 
 jobs:
   quality:
@@ -19,7 +19,7 @@ jobs:
         uses: ./.github/workflows/setup-poetry-env
 
       - name: Run checks
-        uses: ./.github/workflows/run-checks 
+        uses: ./.github/workflows/run-checks
 
       {%- if cookiecutter.mkdocs == "y" %}
 
@@ -28,7 +28,7 @@ jobs:
           source .venv/bin/activate
           make docs-test
       {%- endif %}
-        
+
   {%- if cookiecutter.tox== "y" %}
 
   tox:
@@ -43,10 +43,10 @@ jobs:
 
       - name: Set up the environment
         uses: ./.github/workflows/setup-poetry-env
-        with: 
+        with:
           python-version: {% raw %}${{ matrix.python-version }}{% endraw %}
 
-      - name: Test with tox 
+      - name: Test with tox
         run: |
           source .venv/bin/activate
           poetry add tox-gh-actions
