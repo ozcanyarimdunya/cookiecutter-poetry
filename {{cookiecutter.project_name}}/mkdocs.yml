@@ -71,3 +71,6 @@ extra:
     - icon: material/gmail
       link: mailto:{{cookiecutter.email}}
       name: Mail
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/{{cookiecutter.stack_overflow_username}}
+      name: Stack Overflow

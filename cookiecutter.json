@@ -4,7 +4,7 @@
   "github_username": "ozcanyarimdunya",
   "project_name": "example",
   "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
-  "project_description": "This is a template repository for Python projects that use Poetry for their dependency management.",
+  "project_description": "This is a template repository for Python projects.",
   "include_github_actions": [
     "y",
     "n"
@@ -19,12 +19,12 @@
     "n"
   ],
   "tox": [
-    "y",
-    "n"
+    "n",
+    "y"
   ],
   "mypy": [
-    "y",
-    "n"
+    "n",
+    "y"
   ],
   "open_source_license": [
     "MIT license",
@@ -35,5 +35,6 @@
     "Not open source"
   ],
   "linkedin_username": "ozcanyarimdunya",
+  "stack_overflow_username": "ozcanyarimdunya",
   "twitter_username": "ozcanyarimdunya"
 }
