@@ -1,7 +1,11 @@
 install: ## Install the poetry environment
 	@echo "🚀 Creating virtual environment using pyenv and poetry"
-	@poetry install	
+	@poetry install
+	@poetry run pre-commit install
 	@poetry shell
+
+lint:
+	@poetry run pre-commit run -a
 
 format: ## Format code using isort and black.
 	@echo "🚀 Formatting code: Running isort and black"
