@@ -14,7 +14,6 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.7,<3.11"
 
-
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
 pre-commit = "^2.18.1"
@@ -25,7 +24,7 @@ mdx-include = "^1.4.1"
 {% endif -%}
 {% if cookiecutter.mypy == 'y' -%}
 mypy = "^0.942"
-{%- endif %}
+{%- endif -%}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -70,4 +69,4 @@ exclude = [
     '\.venv',
     'tests'
 ]
-{%- endif %}
+{% endif -%}
