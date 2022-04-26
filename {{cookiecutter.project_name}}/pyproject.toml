@@ -70,4 +70,4 @@ exclude = [
     '\.venv',
     'tests'
 ]
-{% endif %}
+{%- endif %}
