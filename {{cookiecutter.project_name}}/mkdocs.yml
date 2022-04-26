@@ -1,6 +1,6 @@
 site_name: {{cookiecutter.project_name}}
-repo_url: https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}
-site_url: https://{{cookiecutter.author_github_handle}}.github.io/{{cookiecutter.project_name}}
+repo_url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
+site_url: https://{{cookiecutter.github_username}}.github.io/{{cookiecutter.project_name}}
 site_description: {{cookiecutter.project_description}}
 site_author: {{cookiecutter.author}}
 copyright: Maintained by {{cookiecutter.author}}.
@@ -66,7 +66,7 @@ extra:
       link: https://twitter.com/{{cookiecutter.twitter_username}}
       name: Twitter
     - icon: fontawesome/brands/github
-      link: https://github.com/{{cookiecutter.author_github_handle}}
+      link: https://github.com/{{cookiecutter.github_username}}
       name: Github
     - icon: material/gmail
       link: mailto:{{cookiecutter.email}}

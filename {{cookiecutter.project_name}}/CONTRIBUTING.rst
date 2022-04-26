@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/issues
+Report bugs at https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues
 
 If you are reporting a bug, please include:
 
@@ -44,7 +44,7 @@ Submit Feedback
 ~~~~~~~~~~~~~~~
 
 The best way to send feedback is to file an issue at
-https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/issues.
+https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues.
 
 If you are proposing a new feature:
 
@@ -60,7 +60,7 @@ Ready to contribute? Here's how to set up `{{cookiecutter.project_name}}` for lo
 development. Please note this documentation assumes you already have
 `poetry` and `Git` installed and ready to go.
 
-| 1. Fork the `{{cookiecutter.project_name}}` repo on GitHub. 
+| 1. Fork the `{{cookiecutter.project_name}}` repo on GitHub.
 
 | 2. Clone your fork locally:
 
@@ -119,7 +119,7 @@ development. Please note this documentation assumes you already have
 
         tox
 
-   This requires you to have multiple versions of python installed. 
+   This requires you to have multiple versions of python installed.
    This step is also triggered in the CI/CD pipeline, so you could also choose to skip this
    step locally.
 

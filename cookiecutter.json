@@ -1,7 +1,7 @@
 {
   "author": "Özcan Yarımdünya",
   "email": "ozcanyd@gmail.com",
-  "author_github_handle": "ozcanyarimdunya",
+  "github_username": "ozcanyarimdunya",
   "project_name": "example",
   "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
   "project_description": "This is a template repository for Python projects that use Poetry for their dependency management.",
