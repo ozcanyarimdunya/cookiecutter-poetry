@@ -59,23 +59,15 @@ markdown_extensions:
 
 extra:
   social:
-{% if cookiecutter.linkedin_username != "" %}
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/{{cookiecutter.linkedin_username}}
       name: LinkedIn
-{%- endif %}
-{% if cookiecutter.twitter_username != "" %}
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/{{cookiecutter.twitter_username}}
       name: Twitter
-{%- endif %}
-{% if cookiecutter.author_github_handle != "" %}
     - icon: fontawesome/brands/github
       link: https://github.com/{{cookiecutter.author_github_handle}}
       name: Github
-{%- endif %}
-{% if cookiecutter.email != "" %}
     - icon: material/gmail
       link: mailto:{{cookiecutter.email}}
       name: Mail
-{%- endif %}
